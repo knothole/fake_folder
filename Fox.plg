@@ -1,0 +1,81 @@
+<html>
+<body>
+<pre>
+<h1>ﾋﾞﾙﾄﾞのﾛｸﾞ</h1>
+<h3>
+--------------------構成: Fox - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"Release/Fox.res" /d "NDEBUG" /d "_AFXDLL" "E:\Project\VC\fox\Fox.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Knothole\LOCALS~1\Temp\RSP5C.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/Fox.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Project\VC\fox\AboutPage.cpp"
+"E:\Project\VC\fox\Encode.cpp"
+"E:\Project\VC\fox\FileApi.cpp"
+"E:\Project\VC\関数クラス\FileString.cpp"
+"E:\Project\VC\fox\Folder.cpp"
+"E:\Project\VC\fox\Fox.cpp"
+"E:\Project\VC\fox\FoxDlg.cpp"
+"E:\Project\VC\fox\FoxIni.cpp"
+"E:\Project\VC\関数クラス\Ini.cpp"
+"E:\Project\VC\fox\MainPage.cpp"
+"E:\Project\VC\fox\RegEdit.cpp"
+"E:\Project\VC\fox\SettingPage.cpp"
+"E:\Project\VC\関数クラス\ShellControl.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Knothole\LOCALS~1\Temp\RSP5C.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Knothole\LOCALS~1\Temp\RSP5D.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/Fox.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Project\VC\fox\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Knothole\LOCALS~1\Temp\RSP5D.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Knothole\LOCALS~1\Temp\RSP5E.tmp" を作成し、次の内容を記録します
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Fox.pdb" /machine:I386 /out:"Release/Fox.exe" 
+.\Release\AboutPage.obj
+.\Release\Encode.obj
+.\Release\FileApi.obj
+.\Release\FileString.obj
+.\Release\Folder.obj
+.\Release\Fox.obj
+.\Release\FoxDlg.obj
+.\Release\FoxIni.obj
+.\Release\Ini.obj
+.\Release\MainPage.obj
+.\Release\RegEdit.obj
+.\Release\SettingPage.obj
+.\Release\ShellControl.obj
+.\Release\StdAfx.obj
+.\Release\Fox.res
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Knothole\LOCALS~1\Temp\RSP5E.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+AboutPage.cpp
+Encode.cpp
+FileApi.cpp
+FileString.cpp
+Folder.cpp
+Fox.cpp
+FoxDlg.cpp
+FoxIni.cpp
+Ini.cpp
+MainPage.cpp
+RegEdit.cpp
+SettingPage.cpp
+ShellControl.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+
+
+
+<h3>結果</h3>
+Fox.exe - ｴﾗｰ 0、警告 0
+</pre>
+</body>
+</html>

@@ -1,0 +1,300 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Fox.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Fox.ico"
+IDI_NOTFOUND            ICON    DISCARDABLE     "res\\not.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Foxのﾊﾞｰｼﾞｮﾝ情報"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Fox Build 01",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_FOX_DIALOG DIALOGEX 0, 0, 323, 197
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "FakeFolder 0.50"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,266,14,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,266,50,50,14
+    CONTROL         "Tab1",IDC_MainTab,"SysTabControl32",0x0,7,7,253,186
+    PUSHBUTTON      "適用",IDC_ApplyButton,266,32,50,14
+END
+
+IDD_AboutDlg DIALOG DISCARDABLE  0, 0, 244, 160
+STYLE WS_CHILD | WS_VISIBLE
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,9,10,20,20
+    LTEXT           "FakeFolder 0.50\nCopyright(C) Knothole",IDC_STATIC,34,
+                    10,75,16
+    EDITTEXT        IDC_InfoEdit,34,39,108,21,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_WANTRETURN | NOT WS_BORDER
+    CONTROL         "List2",IDC_VersionList,"SysListView32",LVS_REPORT | 
+                    LVS_SORTASCENDING | LVS_NOCOLUMNHEADER | WS_BORDER | 
+                    WS_TABSTOP,142,10,96,144
+    GROUPBOX        "Info",IDC_STATIC,3,88,133,66
+    EDITTEXT        IDC_DllInfoEdit,9,100,121,46,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN
+END
+
+IDD_MainDlg DIALOG DISCARDABLE  0, 0, 244, 160
+STYLE WS_CHILD | WS_VISIBLE
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "パス:",IDC_STATIC,5,10,15,8
+    PUSHBUTTON      "参照",IDC_PathBrowse,214,10,23,12
+    GROUPBOX        "Icon",IDC_STATIC,5,35,30,35
+    ICON            "",IDC_Icon,10,45,20,20,SS_REALSIZEIMAGE
+    COMBOBOX        IDC_FolderCombo,44,54,100,151,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "偽装",IDC_Fake,155,50,35,15
+    PUSHBUTTON      "解除",IDC_Release,200,50,35,15
+    ICON            "",IDC_ControlIcon,10,105,20,20,SS_NOTIFY
+    ICON            "",IDC_PrinterIcon,44,105,20,20,SS_NOTIFY
+    ICON            "",IDC_TrashIcon,78,105,20,20,SS_NOTIFY
+    ICON            "",IDC_NetworkIcon,112,105,20,20,SS_NOTIFY
+    ICON            "",IDC_DialIcon,146,105,20,20,SS_NOTIFY
+    ICON            "",IDC_MyConputerIcon,180,105,20,20,SS_NOTIFY
+    ICON            "",IDC_FavoriteIcon,214,105,20,20,SS_NOTIFY
+    ICON            "",IDC_MyDocumentIcon,10,130,20,20,SS_NOTIFY
+    ICON            "",IDC_CacheIcon,44,130,20,20,SS_NOTIFY
+    ICON            "",IDC_IEIcon,78,130,20,20,SS_NOTIFY
+    ICON            "",IDC_ActiveXIcon,112,130,20,20,SS_NOTIFY
+    ICON            "",IDC_TaskIcon,146,130,20,20,SS_NOTIFY
+    ICON            "",IDC_SubscriptIcon,180,130,20,20,SS_NOTIFY
+    ICON            "",IDC_HistoryIcon,214,130,20,20,SS_NOTIFY
+    GROUPBOX        "一覧",IDC_STATIC,0,95,240,60
+    COMBOBOX        IDC_PathCombo,23,10,186,122,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SettingDlg DIALOG DISCARDABLE  0, 0, 244, 160
+STYLE WS_CHILD | WS_VISIBLE
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "FakeFolder 0.2x互換",IDC_CompatibleCheck,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,11,76,10
+    CONTROL         "パスワードを使用する",IDC_PasswordCheck,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,29,79,10
+    CONTROL         "起動時にパスワードを求める(未実装)",IDC_StartupPass,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,10,
+                    80,124,10
+    CONTROL         "フォルダの削除を阻止する(未実装)",IDC_DisEraseCheck,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,10,
+                    63,118,10
+    CONTROL         "解除後にフォルダを開く",IDC_OpenFolder,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,45,84,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Fox MFC ｱﾌﾟﾘｹｰｼｮﾝ\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Fox\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Fox.EXE\0"
+            VALUE "ProductName", "Fox ｱﾌﾟﾘｹｰｼｮﾝ\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FOX_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 316
+        VERTGUIDE, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+        HORZGUIDE, 193
+    END
+
+    IDD_AboutDlg, DIALOG
+    BEGIN
+        VERTGUIDE, 9
+        VERTGUIDE, 34
+        VERTGUIDE, 142
+        HORZGUIDE, 10
+        HORZGUIDE, 31
+        HORZGUIDE, 154
+    END
+
+    IDD_MainDlg, DIALOG
+    BEGIN
+        VERTGUIDE, 5
+        VERTGUIDE, 237
+        HORZGUIDE, 22
+        HORZGUIDE, 70
+        HORZGUIDE, 86
+        HORZGUIDE, 120
+    END
+
+    IDD_SettingDlg, DIALOG
+    BEGIN
+        VERTGUIDE, 10
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "Fox のﾊﾞｰｼﾞｮﾝ情報(&A)..."
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\Fox.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
